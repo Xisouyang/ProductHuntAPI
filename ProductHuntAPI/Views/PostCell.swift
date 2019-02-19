@@ -49,6 +49,19 @@ import UIKit
 
 class PostCell: UITableViewCell {
     
+    var post: Post? {
+        didSet {
+            // check to see if valid data entered
+            guard let post = post else { return }
+            nameLabel.text = post.name
+            taglineLabel.text = post.tagline
+            commentCountLabel.text = "Comments: \(post.commentsCount)"
+            voteCountLabel.text = "Votes: \(post.votesCount)"
+            updatePreviewImage()
+        }
+    }
+    
+    
     let containerView: UIView = {
         let containerView = UIView()
         return containerView
@@ -94,6 +107,10 @@ class PostCell: UITableViewCell {
         previewImageView.image = UIImage(named: "placeholder")
         return previewImageView
     }()
+    
+    func updatePreviewImage() {
+        previewImageView.image = UIImage(named: "placeholder")
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
