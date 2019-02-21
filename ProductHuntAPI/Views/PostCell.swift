@@ -61,7 +61,6 @@ class PostCell: UITableViewCell {
         }
     }
     
-    
     let containerView: UIView = {
         let containerView = UIView()
         return containerView
@@ -69,8 +68,10 @@ class PostCell: UITableViewCell {
     
     let nameLabel: UILabel = {
         var nameLabel = UILabel()
-        nameLabel.text = "Namenvdlnvskfvdvfvd"
+        nameLabel.text = "Namenvdlnvskfvdvfvduvnkdsvjdvnsjknvkdjsnvkjsvdn"
         nameLabel.lineBreakMode = .byTruncatingTail
+//        nameLabel.setContentHuggingPriority(UILayoutPriority(rawValue: 250), for: .horizontal)
+        nameLabel.adjustsFontSizeToFitWidth = true
         return nameLabel
     }()
     
@@ -99,6 +100,7 @@ class PostCell: UITableViewCell {
         let commentVoteStackView = UIStackView(arrangedSubviews: [])
         commentVoteStackView.axis = .horizontal
         commentVoteStackView.spacing = 8
+        commentVoteStackView.setContentHuggingPriority(UILayoutPriority(rawValue: 251), for: .horizontal)
         return commentVoteStackView
     }()
     
