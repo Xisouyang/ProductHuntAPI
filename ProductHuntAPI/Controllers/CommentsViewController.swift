@@ -10,17 +10,20 @@ import UIKit
 
 class CommentsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var comments: [String]! = [] {
+    var comments: [Comment]! = [] {
         didSet {
-            
+            tableView.reloadData()
         }
     }
+    var postID: Int!
     let tableView = UITableView()
+    var networkManager = NetworkManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupTableView()
+        updateComments()
 
         // Do any additional setup after loading the view.
     }
@@ -31,6 +34,17 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.delegate = self
         view.addSubview(tableView)
         CommentsTableViewConstraints()
+    }
+    
+    func updateComments() {
+        networkManager.getComments(postID) { result in
+            switch result {
+            case let .success(comments):
+                self.comments = comments
+            case let .failure(error):
+                print(error)
+            }
+        }
     }
     
 

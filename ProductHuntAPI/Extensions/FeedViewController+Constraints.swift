@@ -30,7 +30,7 @@ extension FeedViewController  {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let post = posts[indexPath.row]
         let commentsVC = CommentsViewController()
-        commentsVC.comments = ["hahaha"]
+        commentsVC.postID = post.id
         navigationController?.pushViewController(commentsVC, animated: true)
     }
     

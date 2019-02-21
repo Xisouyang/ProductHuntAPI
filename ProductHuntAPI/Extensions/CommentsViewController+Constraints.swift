@@ -22,7 +22,7 @@ extension CommentsViewController {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "commentCell", for: indexPath) as! CommentCell
         let comment = comments[indexPath.row]
-        cell.commentsTextView.text = comment
+        cell.commentsTextView.text = comment.body
         return cell
     }
     
