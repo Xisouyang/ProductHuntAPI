@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D013F2E221F228300093227 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D013F2D221F228300093227 /* Comment.swift */; };
 		5D03E54A221E297200234F76 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D03E549221E297200234F76 /* CommentsViewController.swift */; };
 		5D03E54C221E2A0500234F76 /* CommentsViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D03E54B221E2A0500234F76 /* CommentsViewController+Constraints.swift */; };
 		5D03E550221E316600234F76 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D03E54F221E316600234F76 /* CommentCell.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D013F2D221F228300093227 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		5D03E549221E297200234F76 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		5D03E54B221E2A0500234F76 /* CommentsViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentsViewController+Constraints.swift"; sourceTree = "<group>"; };
 		5D03E54F221E316600234F76 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				5D04012A2218F2BC0009B1B1 /* Post.swift */,
+				5D013F2D221F228300093227 /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				5D03E552221E31E000234F76 /* CommentCell+Constraints.swift in Sources */,
 				5D03E54A221E297200234F76 /* CommentsViewController.swift in Sources */,
 				5D03E550221E316600234F76 /* CommentCell.swift in Sources */,
+				5D013F2E221F228300093227 /* Comment.swift in Sources */,
 				5DBFF244220117DA00321227 /* AppDelegate.swift in Sources */,
 				5D04012B2218F2BC0009B1B1 /* Post.swift in Sources */,
 				5D04012E2218F6010009B1B1 /* PostCell.swift in Sources */,
