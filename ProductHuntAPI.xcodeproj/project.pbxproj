@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D03E54A221E297200234F76 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D03E549221E297200234F76 /* CommentsViewController.swift */; };
+		5D03E54C221E2A0500234F76 /* CommentsViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D03E54B221E2A0500234F76 /* CommentsViewController+Constraints.swift */; };
+		5D03E550221E316600234F76 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D03E54F221E316600234F76 /* CommentCell.swift */; };
+		5D03E552221E31E000234F76 /* CommentCell+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D03E551221E31E000234F76 /* CommentCell+Constraints.swift */; };
 		5D0401272218EF2A0009B1B1 /* FeedViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0401262218EF2A0009B1B1 /* FeedViewController+Constraints.swift */; };
 		5D04012B2218F2BC0009B1B1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D04012A2218F2BC0009B1B1 /* Post.swift */; };
 		5D04012E2218F6010009B1B1 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D04012D2218F6010009B1B1 /* PostCell.swift */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D03E549221E297200234F76 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		5D03E54B221E2A0500234F76 /* CommentsViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentsViewController+Constraints.swift"; sourceTree = "<group>"; };
+		5D03E54F221E316600234F76 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		5D03E551221E31E000234F76 /* CommentCell+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentCell+Constraints.swift"; sourceTree = "<group>"; };
 		5D0401262218EF2A0009B1B1 /* FeedViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewController+Constraints.swift"; sourceTree = "<group>"; };
 		5D04012A2218F2BC0009B1B1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		5D04012D2218F6010009B1B1 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
@@ -88,7 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				5D0401262218EF2A0009B1B1 /* FeedViewController+Constraints.swift */,
+				5D03E54B221E2A0500234F76 /* CommentsViewController+Constraints.swift */,
 				5DF6C723221B5C86003D6A71 /* PostCell+Constraints.swift */,
+				5D03E551221E31E000234F76 /* CommentCell+Constraints.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -97,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				5DBFF245220117DA00321227 /* FeedViewController.swift */,
+				5D03E549221E297200234F76 /* CommentsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -113,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				5D04012D2218F6010009B1B1 /* PostCell.swift */,
+				5D03E54F221E316600234F76 /* CommentCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -315,9 +327,13 @@
 				5D0401272218EF2A0009B1B1 /* FeedViewController+Constraints.swift in Sources */,
 				5DF6C724221B5C86003D6A71 /* PostCell+Constraints.swift in Sources */,
 				5DF616D2221D2CDB001E4443 /* NetworkManager.swift in Sources */,
+				5D03E552221E31E000234F76 /* CommentCell+Constraints.swift in Sources */,
+				5D03E54A221E297200234F76 /* CommentsViewController.swift in Sources */,
+				5D03E550221E316600234F76 /* CommentCell.swift in Sources */,
 				5DBFF244220117DA00321227 /* AppDelegate.swift in Sources */,
 				5D04012B2218F2BC0009B1B1 /* Post.swift in Sources */,
 				5D04012E2218F6010009B1B1 /* PostCell.swift in Sources */,
+				5D03E54C221E2A0500234F76 /* CommentsViewController+Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

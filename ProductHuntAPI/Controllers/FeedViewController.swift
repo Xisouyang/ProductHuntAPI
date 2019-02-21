@@ -44,7 +44,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.dataSource = self
         tableView.delegate = self
         view.addSubview(tableView)
-        tableViewConstraints()
+        feedTableViewConstraints()
     }
     
     func updateFeed() {
